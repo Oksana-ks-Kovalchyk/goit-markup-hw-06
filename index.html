@@ -411,8 +411,8 @@
             <div class="contact-form-wrapper">
                 <strong class="connect">Подпишитесь на рассылку</strong>
                 <form class="contact-form-list">
-                    <label> 
-                        <input class="contact-form-field" type="email" name="user-email" placeholder="E-mail">
+                    <label for="user-email"> 
+                        <input class="contact-form-field" type="email" name="mail" id="user-email" placeholder="E-mail">
                     </label>
                 <button class="footer-btn" type="submit">Подписаться
                     <svg class="telegram" width="24" height="24">
@@ -439,41 +439,38 @@
             <form class="sign-up-form" name="register-form">
                 <strong class="">Оставьте свои данные, мы вам перезвоним</strong>
                 
-                <label class="label"><span>Имя</span>
-                    <input class="sign-up-group" type="name" name="user-name" value="">
+                <label for="name" class="label"><span>Имя</span>
+                    <input class="sign-up-group" type="name" name="user-name" id="name">
                     <svg class="sign-up-icon" width="12" height="12">
                         <use href="./image/icons.svg#icon-person"></use>
                     </svg>
                     
                 </label>
 
-                <label class="label"><span>Телефон</span> 
-                    <input class="sign-up-group" type="phone" name="phone-number" value="">
+                <label for="phone" class="label"><span>Телефон</span> 
+                    <input class="sign-up-group" type="tel" name="phone-number" id="phone">
                     <svg class="sign-up-icon" width="13" height="13">
                         <use href="./image/icons.svg#icon-phone"></use>
                     </svg>
                     
                 </label>
 
-                <label class="label"><span>Почта</span> 
-                    <input class="sign-up-group" type="email" name="user-email" value="">
+                <label for="email" class="label"><span>Почта</span> 
+                    <input class="sign-up-group" type="email" name="user-email" id="email">
                     <svg class="sign-up-icon" width="15" height="12">
                         <use href="./image/icons.svg#icon-email"></use>
                     </svg>
                     
                 </label>
 
-                <label class="label"><span>Комментарий</span> 
-                
-                <textarea class="textarea" name="feedback" rows="5" placeholder="Введите текст"></textarea>
-                
-
+                <label for="comment" class="label"><span>Комментарий</span> 
+                    <textarea id="comment" class="textarea" name="feedback" rows="5" placeholder="Введите текст"></textarea>
                 </label>
 
             <!-- Checkbox -->
 
-                <label class="form-checkbox">
-                    <input class="" type="checkbox" name="user-agreement" checked>Соглашаюсь с рассылкой и принимаю<span class="span-modal">Условия договора</span> 
+                <label for="check" class="form-checkbox">
+                    <input id="check" class="" type="checkbox" name="user-agreement" checked>Соглашаюсь с рассылкой и принимаю<span class="span-modal">Условия договора</span> 
                 </label>
 
                 <button class="btn btn-mode-dark" type="submit">Отправить</button>

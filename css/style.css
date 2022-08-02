@@ -896,6 +896,12 @@ footer {
     color: rgba(255, 255, 255, 0.6);
 
     outline: transparent;
+
+    transform: border-color var(--anim-slow);
+}
+
+.contact-form-field:focus {
+    border-color: var(--accent-txt-cl);
 }
 
 .contact-form-field::placeholder {
