@@ -437,9 +437,9 @@
             <!-- Форма заповнення -->
 
             <form class="sign-up-form" name="register-form">
-                <strong class="">Оставьте свои данные, мы вам перезвоним</strong>
+                <strong class="details">Оставьте свои данные, мы вам перезвоним</strong>
                 
-                <label for="name" class="label"><span>Имя</span>
+                <label for="name" class="label"><span class="span-label">Имя</span>
                     <input class="sign-up-group" type="name" name="user-name" id="name">
                     <svg class="sign-up-icon" width="12" height="12">
                         <use href="./image/icons.svg#icon-person"></use>
@@ -447,7 +447,7 @@
                     
                 </label>
 
-                <label for="phone" class="label"><span>Телефон</span> 
+                <label for="phone" class="label"><span class="span-label">Телефон</span> 
                     <input class="sign-up-group" type="tel" name="phone-number" id="phone">
                     <svg class="sign-up-icon" width="13" height="13">
                         <use href="./image/icons.svg#icon-phone"></use>
@@ -455,7 +455,7 @@
                     
                 </label>
 
-                <label for="email" class="label"><span>Почта</span> 
+                <label for="email" class="label"><span class="span-label">Почта</span> 
                     <input class="sign-up-group" type="email" name="user-email" id="email">
                     <svg class="sign-up-icon" width="15" height="12">
                         <use href="./image/icons.svg#icon-email"></use>
@@ -463,17 +463,23 @@
                     
                 </label>
 
-                <label for="comment" class="label"><span>Комментарий</span> 
+                <label for="comment" class="label"><span class="span-label">Комментарий</span> 
                     <textarea id="comment" class="textarea" name="feedback" rows="5" placeholder="Введите текст"></textarea>
                 </label>
 
             <!-- Checkbox -->
 
                 <label for="check" class="form-checkbox">
-                    <input id="check" class="" type="checkbox" name="user-agreement" checked>Соглашаюсь с рассылкой и принимаю<span class="span-modal">Условия договора</span> 
+                    <input id="check" class="visually-hidden form-checkbox-input" type="checkbox" name="user-agreement" checked>
+                    <span class="form-checkbox-custom">
+                        <svg class="form-checkbox-icon" width="11px" height="8px">
+                            <use href="./image/icons.svg#icon-vector-1"></use>
+                        </svg>
+                    </span>
+                    <span class="form-checkbox-agreement">Соглашаюсь с рассылкой и принимаю</span><span class="span-modal">Условия договора</span>
                 </label>
 
-                <button class="btn btn-mode-dark" type="submit">Отправить</button>
+                <button class="modal-btn" type="submit">Отправить</button>
             </form>
             
 
