@@ -1010,15 +1010,17 @@ footer {
 
 }
 
-/* Форма заповнення */
+/* Форма заповнення модалки */
 
 
+.sing-up-field {
 
+}
 
-.label {
+.sing-up-label {
     display: flex;
     flex-direction: column;
-    position: relative;
+
 }
 
 
@@ -1039,6 +1041,12 @@ footer {
     letter-spacing: 0.01em;
     
     color: var(--main-txt-cl);
+
+    
+}
+
+.sign-up-input {
+    position: relative;
 }
 
 .details {
@@ -1066,12 +1074,22 @@ footer {
 
 .sign-up-icon {
     position: absolute;
-    left: 0;
-    bottom: 100%;
+    left: 15px;
+    top: 50%;
+    margin-bottom: 14px;
+    transform: translateY(-50%);
 }
+
 
 .span-modal {
     color: var(--accent-txt-cl);
+}
+
+.dictates-comment {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    
 }
 
 .textarea {
@@ -1080,6 +1098,15 @@ footer {
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    padding: 12px 16px;
+    
+    color: rgba(117, 117, 117, 0.5);
 }
 
 /* Checkbox */
@@ -1101,6 +1128,11 @@ footer {
     
     color: var(--main-txt-cl);
 
+}
+
+.checkbox-link {
+    text-decoration-line: underline;
+    color: var(--accent-txt-cl);
 }
 
 .form-checkbox-custom {
