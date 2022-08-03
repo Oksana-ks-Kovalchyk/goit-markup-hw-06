@@ -1097,7 +1097,7 @@ footer {
 }
 
 
-
+.comment-textarea:hover,
 .comment-textarea:focus {
     outline: transparent;
     border-color: var(--accent-txt-cl);
